@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+@keyframes pulseGlowBlue {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(2, 132, 199, 0.2), 0 0 30px rgba(14, 165, 233, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(2, 132, 199, 0.4), 0 0 50px rgba(14, 165, 233, 0.25);
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(1deg);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlowBlue 3s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+/* Custom scrollbar for crisp white and oceanic blue feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bae6fd;
+  border-radius: 4px;
+  border: 1px solid #7dd3fc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+  border-color: #0369a1;
+}

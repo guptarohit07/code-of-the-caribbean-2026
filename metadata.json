@@ -1,0 +1,6 @@
+{
+  "name": "Code of the Caribbean 2026",
+  "description": "Official landing page for Code of the Caribbean 2026 - A 24-hour pirate-themed hackathon hosted by DJSCE.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
