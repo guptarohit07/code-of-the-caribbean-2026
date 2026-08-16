@@ -99,21 +99,17 @@ Below is a detailed breakdown of the technical logic and design decisions poweri
 
 ### 8. 🛡️ Robustness & Zero-API Client-Side Reliability
 * **Error Boundary**: Encapsulates the application in a React `ErrorBoundary` in `main.tsx` with a themed recovery screen to gracefully catch unexpected runtime errors.
-<<<<<<< HEAD
+
 * **No external API or backend is required at runtime.**: Operates 100% on the client side with no API keys, secrets, or server setup required.
-=======
-* **Zero External Dependencies / API Keys**: Operates 100% on the client side with no API keys, secrets, or server setup required.
->>>>>>> origin/main
+
 
 ---
 
 ## 🛠️ Tech Stack
 
-<<<<<<< HEAD
+
 - **Framework**: React 19 + Vite
-=======
-- **Framework**: React 18+ (Vite)
->>>>>>> origin/main
+
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **Animations**: Framer Motion (`motion/react`)
@@ -122,7 +118,7 @@ Below is a detailed breakdown of the technical logic and design decisions poweri
 
 ---
 
-<<<<<<< HEAD
+
 ## 🚢 Project Structure
 
 The project follows a simple React + Vite structure, keeping the application logic, styling, and entry-point configuration organized within the `src` directory.
@@ -176,25 +172,5 @@ code-of-the-caribbean-2026/
     └── Project documentation
 
 *Designed & Developed by **Rohit Gupta** for the **DJS-CSI Task 2 Interview Process**
-=======
-## 🚢 Quick Start & Local Development
-
-1. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-2. **Start development server**:
-   ```bash
-   npm run dev
-   ```
-
-3. **Build production bundle**:
-   ```bash
-   npm run build
-   ```
-
----
-
-*Designed & Developed by **Rohit Gupta** for the **DJS-CSI Task 2 Interview Process**.*
+Designed & Developed by **Rohit Gupta** for the **DJS-CSI Task 2 Interview Process**.*
 >>>>>>> origin/main
