@@ -172,5 +172,3 @@ code-of-the-caribbean-2026/
     └── Project documentation
 
 *Designed & Developed by **Rohit Gupta** for the **DJS-CSI Task 2 Interview Process**
-Designed & Developed by **Rohit Gupta** for the **DJS-CSI Task 2 Interview Process**.*
->>>>>>> origin/main
