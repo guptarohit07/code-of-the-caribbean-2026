@@ -7,7 +7,11 @@
 
 ## 🏴‍☠️ Project Overview
 
+<<<<<<< HEAD
+**Code of the Caribbean 2026** is a polished, animated, interactive single-page landing page designed for the flagship annual 24-hour hackathon. Made for interview for web tech in  **DJS-CSI** (Computer Society of India student chapter at Dwarkadas J. Sanghvi College of Engineering, Mumbai).
+=======
 **Code of the Caribbean 2026** is a production-grade, animated, interactive single-page landing page designed for the flagship annual 24-hour hackathon. Made for interview for web tech in  **DJS-CSI** (Computer Society of India student chapter at Dwarkadas J. Sanghvi College of Engineering, Mumbai).
+>>>>>>> origin/main
 
 The application is built with **React**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, and **Lucide React**. It delivers a high-contrast nautical Caribbean visual identity and follows a clear user journey:
 **Discover → Understand → Get Excited → Register**.
@@ -98,13 +102,21 @@ Below is a detailed breakdown of the technical logic and design decisions poweri
 
 ### 8. 🛡️ Robustness & Zero-API Client-Side Reliability
 * **Error Boundary**: Encapsulates the application in a React `ErrorBoundary` in `main.tsx` with a themed recovery screen to gracefully catch unexpected runtime errors.
+<<<<<<< HEAD
+* **No external API or backend is required at runtime.**: Operates 100% on the client side with no API keys, secrets, or server setup required.
+=======
 * **Zero External Dependencies / API Keys**: Operates 100% on the client side with no API keys, secrets, or server setup required.
+>>>>>>> origin/main
 
 ---
 
 ## 🛠️ Tech Stack
 
+<<<<<<< HEAD
+- **Framework**: React 19 + Vite
+=======
 - **Framework**: React 18+ (Vite)
+>>>>>>> origin/main
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **Animations**: Framer Motion (`motion/react`)
@@ -113,6 +125,61 @@ Below is a detailed breakdown of the technical logic and design decisions poweri
 
 ---
 
+<<<<<<< HEAD
+## 🚢 Project Structure
+
+The project follows a simple React + Vite structure, keeping the application logic, styling, and entry-point configuration organized within the `src` directory.
+
+```text
+code-of-the-caribbean-2026/
+│
+├── public/
+│   └── Static assets used by the application
+│
+├── src/
+│   ├── App.tsx
+│   │   └── Main application component
+│   │       ├── Navigation header
+│   │       ├── Hero section
+│   │       ├── Countdown chronometer
+│   │       ├── Hackathon timeline
+│   │       ├── Prize pool and tracks
+│   │       ├── FAQ accordion
+│   │       ├── Registration / crew manifest
+│   │       ├── Boarding pass modal
+│   │       └── Themed animations and interactions
+│   │
+│   ├── main.tsx
+│   │   └── React application entry point
+│   │       ├── Mounts the application
+│   │       └── Provides the Error Boundary
+│   │
+│   └── index.css
+│       └── Global styles and Tailwind CSS configuration
+│
+├── index.html
+│   └── Vite HTML entry point
+│
+├── package.json
+│   └── Project metadata, scripts, and dependencies
+│
+├── package-lock.json
+│   └── Locked npm dependency versions
+│
+├── vite.config.ts
+│   └── Vite build and development configuration
+│
+├── tsconfig.json
+│   └── TypeScript configuration
+│
+├── .gitignore
+│   └── Files and directories excluded from version control
+│
+└── README.md
+    └── Project documentation
+
+*Designed & Developed by **Rohit Gupta** for the **DJS-CSI Task 2 Interview Process**
+=======
 ## 🚢 Quick Start & Local Development
 
 1. **Install dependencies**:
@@ -133,3 +200,4 @@ Below is a detailed breakdown of the technical logic and design decisions poweri
 ---
 
 *Designed & Developed by **Rohit Gupta** for the **DJS-CSI Task 2 Interview Process**.*
+>>>>>>> origin/main
