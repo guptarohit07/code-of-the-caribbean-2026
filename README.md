@@ -7,11 +7,8 @@
 
 ## 🏴‍☠️ Project Overview
 
-<<<<<<< HEAD
+
 **Code of the Caribbean 2026** is a polished, animated, interactive single-page landing page designed for the flagship annual 24-hour hackathon. Made for interview for web tech in  **DJS-CSI** (Computer Society of India student chapter at Dwarkadas J. Sanghvi College of Engineering, Mumbai).
-=======
-**Code of the Caribbean 2026** is a production-grade, animated, interactive single-page landing page designed for the flagship annual 24-hour hackathon. Made for interview for web tech in  **DJS-CSI** (Computer Society of India student chapter at Dwarkadas J. Sanghvi College of Engineering, Mumbai).
->>>>>>> origin/main
 
 The application is built with **React**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, and **Lucide React**. It delivers a high-contrast nautical Caribbean visual identity and follows a clear user journey:
 **Discover → Understand → Get Excited → Register**.
