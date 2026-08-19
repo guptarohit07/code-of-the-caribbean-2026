@@ -13,6 +13,7 @@ import {
 import { RegistrationFormState, MemberInfo, ThemeMode } from '../types';
 import { DEFAULT_MEMBERS, VOYAGE_TRACKS } from '../data';
 import { PirateHatSkull } from './PirateAssets';
+import { playCannonBlast, playPlankClick } from '../utils/audio';
 
 interface RegistrationModalProps {
   isOpen: boolean;
@@ -103,6 +104,9 @@ export const CrewRegistrationModal = memo(function CrewRegistrationModal({
     setTicketId(generatedTicket);
     setIsRegistered(true);
 
+    // Fire explosive pirate cannon SFX
+    playCannonBlast();
+
     try {
       confetti({
         particleCount: 120,
@@ -117,6 +121,7 @@ export const CrewRegistrationModal = memo(function CrewRegistrationModal({
 
   const handleCopyTicket = useCallback(() => {
     if (ticketId) {
+      playPlankClick();
       navigator.clipboard.writeText(ticketId);
       setIsCopied(true);
       if (copyTimeoutRef.current !== null) {

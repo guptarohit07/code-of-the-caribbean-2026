@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, memo, useId } from 'react';
 import { motion, useInView } from 'motion/react';
 import confetti from 'canvas-confetti';
+import { playTreasureOpenSFX } from '../utils/audio';
 
 /**
  * Custom Pirate Hat with Jolly Roger Skull
@@ -131,6 +132,7 @@ export const InteractiveTreasureChest = memo(function InteractiveTreasureChest({
   useEffect(() => {
     if (isInView && !hasTriggeredRef.current) {
       hasTriggeredRef.current = true;
+      playTreasureOpenSFX();
       try {
         confetti({
           particleCount: isPrimary ? 65 : 40,

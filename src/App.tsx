@@ -49,6 +49,8 @@ import {
   OceanWavesDivider,
 } from './components/PirateAssets';
 import { ThemeToggle } from './components/ThemeToggle';
+import { AudioController } from './components/AudioController';
+import { playPlankClick } from './utils/audio';
 import { VoyageCountdownChronometer } from './components/VoyageCountdownChronometer';
 import { FaqAccordionSection } from './components/FaqAccordionSection';
 import { CrewRegistrationModal } from './components/CrewRegistrationModal';
@@ -172,6 +174,27 @@ export default function App() {
     });
 
     return () => observer.disconnect();
+  }, []);
+
+  // Global Wooden Plank Click Audio Feedback on Interactive Controls
+  useEffect(() => {
+    const handleGlobalClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement | null;
+      if (
+        target &&
+        (target.closest('button') ||
+          target.closest('a') ||
+          target.closest('input') ||
+          target.closest('select') ||
+          target.closest('[role="button"]') ||
+          target.closest('.cursor-pointer'))
+      ) {
+        playPlankClick();
+      }
+    };
+
+    document.addEventListener('click', handleGlobalClick, { capture: true });
+    return () => document.removeEventListener('click', handleGlobalClick, { capture: true });
   }, []);
 
   // Cleanup navigation timers on unmount
@@ -330,7 +353,8 @@ export default function App() {
           </nav>
 
           {/* Header Action Controls */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <AudioController theme={theme} />
             <ThemeToggle theme={theme} onToggle={toggleTheme} />
 
             <button
